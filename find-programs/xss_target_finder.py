@@ -1356,7 +1356,7 @@ class TargetFinder:
                 if result:
                     with open(results_file, 'a') as f:
                         f.write(f"{result['url']} -- {result['score']}\n")
-                    logger.info(f"✓ GOOD TARGET: {result['url']} -- Score {result['score']}")
+                    logger.info(f"✅ GOOD TARGET: {result['url']} -- Score {result['score']}")
                 else:
                     logger.info(f"✗ Not interesting: {url}")
 
@@ -1615,5 +1615,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
